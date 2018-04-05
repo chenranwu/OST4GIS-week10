@@ -64,6 +64,21 @@ body {
     padding: 10px 20px 15px;
 }
 
+.topright-button{
+  position: absolute;
+  right: 20px;
+}
+
+a {
+  color: black;
+}
+
+.navbar-header{
+    color: black;
+    font-weight: bold;
+    margin-left: -14px;
+    font-size: 18px;
+}
 .navbar-brand {
     font-size: 14px;
     font-weight: bold;
