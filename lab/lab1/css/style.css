@@ -7,14 +7,14 @@ body {
 .map {
     position: absolute;
     right: 0px;
-    left: 340px;
+    left: 540px;
     height: 100%;
     top: 0;
 }
 
 .sidebar {
-    position: absolute;
-    left: 0px;
+    position: relative;
+    left: 200px;
     width: 340px;
     top: 0;
     bottom: 0;
@@ -24,6 +24,7 @@ body {
 }
 
 .item {
+    margin-top:20px;
     padding: 10px;
     background-color: #eee;
 }
@@ -41,7 +42,7 @@ body {
 .sort {
     position: fixed;
     bottom: 0;
-    left: 0;
+    left: 200px;
     width: 340px;
     background-color: #fff;
     padding: 20px;
@@ -60,18 +61,43 @@ body {
     border-radius: 0;
     background-color: #fff;
     border-bottom: 1px solid #eee;
-    margin: -14px -20px 20px;
+    margin: -14px -30px 20px;
     padding: 10px 20px 15px;
 }
 
+.container{
+  position: absolute;
+  left: 0px;
+  width: 200px;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  padding: 15px;
+  padding-bottom: 0px;
+  background-color: #273440;
+}
+
+.glyphicon.glyphicon-shopping-cart {
+   font-size: 40px;
+   color: white;
+   line-height: 1.5;
+ }
+
 .topright-button{
   position: absolute;
-  right: 20px;
+  right: 10px;
 }
 
 a {
   color: black;
 }
+.w-100{
+  border-top: 0.5px solid grey;
+  padding:5px;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+
 
 .navbar-header{
     color: black;
@@ -84,6 +110,10 @@ a {
     font-weight: bold;
 }
 
+.dropdown{
+  position: absolute;
+  right:30px;
+}
 /* =============
 Media Queries
 ============= */
