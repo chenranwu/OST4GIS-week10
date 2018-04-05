@@ -68,3 +68,13 @@ body {
     font-size: 14px;
     font-weight: bold;
 }
+
+#layer {
+  marker-width: 7;
+  marker-fill: ramp([cluster_no], cartocolor(SunsetDark, 10), jenks);
+  marker-fill-opacity: 0.9;
+  marker-allow-overlap: true;
+  marker-line-width: 1;
+  marker-line-color: #FFFFFF;
+  marker-line-opacity: 1;
+}

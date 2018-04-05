@@ -98,6 +98,22 @@ a {
   margin-top: 10px;
 }
 
+.btn-group{
+  display: inline-block;
+  float: right;
+}
+
+#myModal > div > div > div.modal-body > div.container-fluid > div.row{
+  border-bottom:  0.5px solid grey;
+  padding:5px;
+}
+
+#myModal > div > div > div.modal-body > div.container-fluid > div.row > div.col-md-12{
+  font-weight: bold;
+  font-size: 20px;
+  left: -20px;
+}
+
 
 .navbar-header{
     color: black;
