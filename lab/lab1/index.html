@@ -78,7 +78,7 @@
         <h2 class="item-heading">Tandy’s Basketweavers</h2>
         <div>490 Freedom Drive<br>
         Philadelphia, PA 19425</div>
-        <button type="button" class="btn btn-danger" style="padding:5px">Low Inventory</button>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal" style="padding:5px"> Low Inventory</button>
       </div>
       <div class="item">
         <h2 class="item-heading">Basket Case</h2>
@@ -104,6 +104,25 @@
       <span style="font-weight: bold">  Sort by </span><span class="sort-option selected">A–Z</span> <span class="sort-option">Inventory</span>
       </div>
     </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
     <!-- Map -->
     <div id="map" class="map"></div>
     <!-- Javascript Imports -->
