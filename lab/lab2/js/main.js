@@ -32,6 +32,7 @@ var cartoUserName = 'chenranwu';
 var cartoVizId = '67361d24-4a9b-42fc-9555-2fe0ef930c6c';
 
 var layerUrl = 'https://'+cartoUserName+'.carto.com/api/v2/viz/'+cartoVizId+'/viz.json';
+var dataset = "https://raw.githubusercontent.com/chenranwu/OST4GIS-week10/master/lab/lab2/data_geocodio_0b1a812e7e449e7c23e32aaf04367f8f07165abe.geojson";
 
 console.log(layerUrl);
 
@@ -41,3 +42,26 @@ cartodb.createLayer(map, layerUrl)
   }).on('error', function(err) {
     console.log(err);
   });
+
+
+$(document).ready(function() {
+     $.ajax(dataset).done(function(data) {
+       var parsedData = JSON.parse(data);
+       L.geoJson(parsedData).addTo(map);
+     }
+   );
+  }
+  );
+
+
+
+ /*$(document).ready(function() {
+    $.ajax(dataset).done(function(data) {
+      var parsedData = JSON.parse(data);
+
+      L.geoJson(data).addTo(map);
+    }
+  );
+}
+);
+*/
